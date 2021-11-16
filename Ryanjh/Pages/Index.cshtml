@@ -4,7 +4,120 @@
     ViewData["Title"] = "Home page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<!-- AVATAR START -->
+<section class="text-light bg-color-primary pt-5 pb-2">
+    <div class="d-flex align-items-center flex-column">
+        <img src="/images/avataaars.svg" alt="Avatar of Ryan Hendrickson">
+        <h1>Ryan Hendrickson</h1>
+    </div>
+</section>
+<!-- AVATAR END -->
+<!-- ABOUT START -->
+<section class="pt-3 pb-2" id="about">
+    <div class="container">
+        <h2 class="text-center">About</h2>
+        <div class="row">
+            <div class="col-md mx-auto">
+                <p class="lead">
+                    Ryan was born and raised in the Greater Seattle Area. He is an aspiring .NET developer currently enrolled in
+                    Green River College's Software Development Bachelors program.
+                </p>
+            </div>
+            <div class="col-md mx-auto lead">
+                <p class="">Ryan is proficient with:</p>
+                <ul>
+                    <li>Front-end Development: HTML5, CSS3 (Bootstrap 5), & Javascript (JQuery/Ajax)</li>
+                    <li>Back-end Development: .NET 5 MVC/MVVM, Java Spring, & PHP</li>
+                    <li>C#, Java, & BASH</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ABOUT END -->
+<!-- PORTFOLIO START -->
+<section class="bg-color-primary pt-3 pb-2" id="portfolio">
+    <div class="container">
+        <h2 class="text-center text-light">Portfolio</h2>
+        <!-- ROW ONE -->
+        <div class="row d-flex justify-content-evenly">
+            <!-- RYANJH -->
+            <div class="card mb-3 col-lg-3">
+                <a href="https://github.com/rynhndrcksn/Ryanjh" target="_blank">
+                    <img src="~/images/previews/ryanjh.png" class="card-img-top"
+                         alt="Screenshot of Ryanjh.com">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Ryanjh (this site!)</h5>
+                    <p class="card-text">This site was developed using .NET 5 MVVM and deployed on Azure.</p>
+                    <p class="card-text"><small class="text-muted">Last updated: November 2021</small></p>
+                </div>
+            </div>
+            <!-- NATURAL RESOURCES APPLICANT PORTAL -->
+            <div class="card mb-3 col-lg-3">
+                <a href="https://github.com/rynhndrcksn/natural-resources" target="_blank">
+                    <img src="~/images/previews/natural_resources.png" class="card-img-top"
+                         alt="Screenshot of Green Rivers Natural Resources applicant portal">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Natural Resources Applicant Portal</h5>
+                    <p class="card-text">
+                        Group based full stack project for Green River's Natural Resources department to accept
+                        applicants to their program.
+                    </p>
+                    <p class="card-text"><small class="text-muted">Last updated: June 2021</small></p>
+                </div>
+            </div>
+            <!-- KENT OUTREACH -->
+            <div class="card mb-3 col-lg-3">
+                <a href="https://gitlab.com/rynhndrcksn/kent-outreach-DAR2" target="_blank">
+                    <img src="~/images/previews/kent_outreach.png" class="card-img-top"
+                         alt="Screenshot of the Kent Outreach site">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Kent Outreach</h5>
+                    <p class="card-text">
+                        Worked with group to develop site for client to assist low income families
+                        and those experiencing housing insecurity.
+                    </p>
+                    <p class="card-text"><small class="text-muted">Last updated: Fall 2020</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- PORTFOLIO END -->
+<!-- CONTACT START -->
+<section class="pt-3 pb-2" id="contact">
+    <div class="container">
+        <h2 class="text-center">Contact</h2>
+        <form action="#" method="post">
+            <!-- FIRST/LAST NAME -->
+            <div class="row g-3 pb-3">
+                <div class="form-floating col-md-6">
+                    <input type="text" class="form-control" id="fname" name="fname" placeholder="First Name">
+                    <label for="fname">First Name</label>
+                </div>
+                <div class="form-floating col-md-6">
+                    <input type="text" class="form-control" id="lname" name="lname" placeholder="Last Name">
+                    <label for="lname">Last Name</label>
+                </div>
+            </div>
+            <!-- EMAIL/MESSAGE -->
+            <div class="row g-3 pb-3">
+                <div class="form-floating col-md-6 mb-3">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                    <label for="email">Email</label>
+                </div>
+                <div class="form-floating col-md-6 mb-3">
+                    <textarea class="form-control" placeholder="Message" name="message" id="message"></textarea>
+                    <label for="message">Message</label>
+                </div>
+            </div>
+            <div class="col-12 pb-2">
+                <button type="submit" class="btn btn-primary text-color-primary bg-color-secondary">Get in Contact</button>
+            </div>
+        </form>
+    </div>
+</section>
+<!-- CONTACT END -->
